@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\toshiki.sumiya\\Desktop\\roadmap-project\\expenseTracker\\expenseTracker.csproj": {}
+    "c:\\Users\\toshiki.sumiya\\Desktop\\roadmap-project\\expenseTracker\\expenseTracker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\toshiki.sumiya\\Desktop\\roadmap-project\\expenseTracker\\expenseTracker.csproj": {
+    "c:\\Users\\toshiki.sumiya\\Desktop\\roadmap-project\\expenseTracker\\expenseTracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\toshiki.sumiya\\Desktop\\roadmap-project\\expenseTracker\\expenseTracker.csproj",
+        "projectUniqueName": "c:\\Users\\toshiki.sumiya\\Desktop\\roadmap-project\\expenseTracker\\expenseTracker.csproj",
         "projectName": "expenseTracker",
-        "projectPath": "C:\\Users\\toshiki.sumiya\\Desktop\\roadmap-project\\expenseTracker\\expenseTracker.csproj",
+        "projectPath": "c:\\Users\\toshiki.sumiya\\Desktop\\roadmap-project\\expenseTracker\\expenseTracker.csproj",
         "packagesPath": "C:\\Users\\toshiki.sumiya\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\toshiki.sumiya\\Desktop\\roadmap-project\\expenseTracker\\obj\\",
+        "outputPath": "c:\\Users\\toshiki.sumiya\\Desktop\\roadmap-project\\expenseTracker\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\toshiki.sumiya\\AppData\\Roaming\\NuGet\\NuGet.Config"

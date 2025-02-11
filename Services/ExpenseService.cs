@@ -1,3 +1,4 @@
+using System.Text;
 using System.Text.Json;
 using ExpenseTracker.Models;
 
@@ -40,6 +41,9 @@ namespace ExpenseTracker.Services
             if (!File.Exists(filePath)) File.WriteAllText(filePath, "[]");
             var expenses = GetExpensesFromJson();
             expenses.RemoveAll(x => x.Id == id);
+
+            string json = JsonSerializer.Serialize(expenses, new JsonSerializerOptions { WriteIndented = true });
+            File.WriteAllText(filePath, json);
             return id;
         }
 
@@ -58,7 +62,9 @@ namespace ExpenseTracker.Services
 
         public decimal GetExpenseSummary(int month)
         {
-            return 1;
+            if (!File.Exists(filePath)) File.WriteAllText(filePath, "[]");
+            var expenses = GetExpensesFromJson();
+            return expenses.Where((x)=> x.CreatedAt.Month == month).Sum((item) => item.Amount);
         }
 
         private static int GetNextId(List<Expense> expenses)

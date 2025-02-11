@@ -4,8 +4,10 @@ namespace ExpenseTracker.Utilities
     {
         public static void PrintWelcomeMessage()
         {
-            ConsoleMessage.PrintInfoMessage("こんにちは! GitHub Activity Consoleへようこそ。");
-            ConsoleMessage.PrintInfoMessage("経費を入力してください。");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("こんにちは! GitHub Activity Consoleへようこそ。");
+            Console.WriteLine("経費を入力してください。");
+            Console.ResetColor();
         }
 
         public static void PrintInfoMessage(string message)

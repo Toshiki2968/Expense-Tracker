@@ -1,7 +1,7 @@
-﻿using ExpenseTracker.Services;
+﻿using System.Globalization;
+using ExpenseTracker.Services;
 using ExpenseTracker.Utilities;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.VisualBasic;
 
 // サービスのDI登録
 var serviceCollection = new ServiceCollection();
@@ -54,8 +54,27 @@ switch (commands[1])
         }
         break;
     case "summary":
-        var summary = _expenseService?.GetExpenseSummary();
-        ConsoleMessage.PrintCommandMessage($"Total expenses: ${summary}");
+        if (commands.Count() == 2)
+        {
+            var totalSummary = _expenseService?.GetExpenseSummary();
+            ConsoleMessage.PrintCommandMessage($"Total expenses: ${totalSummary}");
+            break;
+        }
+
+        if (commands.Count() != 4)
+        {
+            ConsoleMessage.PrintErrorMessage("コマンドが不正です。");
+            break;
+        }
+
+        if (commands[2] != "--month")
+        {
+            break;
+        }
+        Int32.TryParse(commands[3], out var month);
+        var summary = _expenseService?.GetExpenseSummary(month);
+        var monthName = CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(month);
+        ConsoleMessage.PrintCommandMessage($"Total expenses for {monthName}: ${summary}");
         break;
     case "delete":
         if (commands[2] != "--id")

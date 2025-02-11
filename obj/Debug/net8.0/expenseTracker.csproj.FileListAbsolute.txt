@@ -16,3 +16,4 @@ C:\Users\toshiki.sumiya\Desktop\roadmap-project\expenseTracker\obj\Debug\net8.0\
 C:\Users\toshiki.sumiya\Desktop\roadmap-project\expenseTracker\obj\Debug\net8.0\expenseTracker.pdb
 C:\Users\toshiki.sumiya\Desktop\roadmap-project\expenseTracker\obj\Debug\net8.0\expenseTracker.genruntimeconfig.cache
 C:\Users\toshiki.sumiya\Desktop\roadmap-project\expenseTracker\obj\Debug\net8.0\ref\expenseTracker.dll
+C:\Users\toshiki.sumiya\Desktop\roadmap-project\expenseTracker\obj\Debug\net8.0\expenseTracker.sourcelink.json
