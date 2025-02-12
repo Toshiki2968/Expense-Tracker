@@ -4,12 +4,11 @@ namespace ExpenseTracker.Services
 {
     public interface IExpenseService
     {
-        List<string> GetAllCommands(); 
-        int AddExpense(string description, decimal amount);
-        int UpdateExpense(int id, string description, decimal amount);
+        int AddExpense(string description, decimal amount, string Category);
         int DeleteExpense(int id);
         List<Expense> GetAllExpense();
         decimal GetExpenseSummary();
         decimal GetExpenseSummary(int month);
+        List<Expense> GetExpenseByCategory(string category);
     }
 }

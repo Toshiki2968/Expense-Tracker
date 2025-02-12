@@ -28,7 +28,7 @@ if (commands[0] != "expense-tracker")
 switch (commands[1])
 {
     case "add":
-        if (commands[2] != "--description")
+        if (commands.Length > 1 || commands[2] != "--description")
         {
             ConsoleMessage.PrintErrorMessage("--descriptionを付けてください。");
             break;

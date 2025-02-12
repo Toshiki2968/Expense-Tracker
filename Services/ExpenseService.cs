@@ -1,4 +1,3 @@
-using System.Text;
 using System.Text.Json;
 using ExpenseTracker.Models;
 
@@ -7,12 +6,8 @@ namespace ExpenseTracker.Services
     public class ExpenseService : IExpenseService
     {
         private static string filePath { get; set; } = "expense.json";
-        public List<string> GetAllCommands()
-        {
-            return [];
-        }
 
-        public int AddExpense(string description, decimal amount)
+        public int AddExpense(string description, decimal amount, string category)
         {
             if (!File.Exists(filePath)) File.WriteAllText(filePath, "[]");
             var expenses = GetExpensesFromJson();
@@ -22,18 +17,14 @@ namespace ExpenseTracker.Services
                 Id = newId,
                 Description = description,
                 Amount = amount,
-                CreatedAt = DateTime.Now
+                CreatedAt = DateTime.Now,
+                Category = category,
             };
             expenses.Add(newExpense);
 
             var json = JsonSerializer.Serialize(expenses, new JsonSerializerOptions { WriteIndented = true });
             File.WriteAllText(filePath, json);
             return newExpense.Id;
-        }
-
-        public int UpdateExpense(int id, string description, decimal amount)
-        {
-            return 1;
         }
 
         public int DeleteExpense(int id)
@@ -64,8 +55,14 @@ namespace ExpenseTracker.Services
         {
             if (!File.Exists(filePath)) File.WriteAllText(filePath, "[]");
             var expenses = GetExpensesFromJson();
-            return expenses.Where((x)=> x.CreatedAt.Month == month).Sum((item) => item.Amount);
+            return expenses.Where((x) => x.CreatedAt.Month == month).Sum((item) => item.Amount);
         }
+
+        public List<Expense> GetExpenseByCategory(string category)
+        {
+            if (!File.Exists(filePath)) File.WriteAllText(filePath, "[]");
+            var expenses = GetExpensesFromJson();
+            // return expenses.Where((x) => x.Category == category); }
 
         private static int GetNextId(List<Expense> expenses)
         {
