@@ -5,7 +5,7 @@ namespace ExpenseTracker.Utilities
         public static void PrintWelcomeMessage()
         {
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("こんにちは! GitHub Activity Consoleへようこそ。");
+            Console.WriteLine("こんにちは! Expense-Tracker Consoleへようこそ。");
             Console.WriteLine("経費を入力してください。");
             Console.ResetColor();
         }

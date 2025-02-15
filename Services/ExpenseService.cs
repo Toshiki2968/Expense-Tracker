@@ -62,7 +62,8 @@ namespace ExpenseTracker.Services
         {
             if (!File.Exists(filePath)) File.WriteAllText(filePath, "[]");
             var expenses = GetExpensesFromJson();
-            // return expenses.Where((x) => x.Category == category); }
+            return expenses.Where((x) => x.Category == category).ToList(); 
+        }
 
         private static int GetNextId(List<Expense> expenses)
         {

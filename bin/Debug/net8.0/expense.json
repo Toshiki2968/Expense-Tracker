@@ -1,26 +1,51 @@
 [
-    {
-      "Id": 1,
-      "Description": "banana",
-      "Amount": 30,
-      "CreatedAt": "2025-02-11T18:36:39.6251883+09:00"
-    },
-    {
-      "Id": 2,
-      "Description": "apple",
-      "Amount": 40,
-      "CreatedAt": "2025-02-11T18:37:04.9024931+09:00"
-    },
-    {
-      "Id": 3,
-      "Description": "ramen",
-      "Amount": 50,
-      "CreatedAt": "2025-03-11T18:36:39.6251883+09:00"
-    },
-    {
-      "Id": 4,
-      "Description": "carry",
-      "Amount": 60,
-      "CreatedAt": "2025-03-11T18:37:04.9024931+09:00"
-    }
-  ]
+  {
+    "Id": 1,
+    "Description": "banana",
+    "Amount": 30,
+    "CreatedAt": "2025-02-11T18:36:39.6251883+09:00",
+    "Category": ""
+  },
+  {
+    "Id": 2,
+    "Description": "apple",
+    "Amount": 40,
+    "CreatedAt": "2025-02-11T18:37:04.9024931+09:00",
+    "Category": ""
+  },
+  {
+    "Id": 3,
+    "Description": "ramen",
+    "Amount": 50,
+    "CreatedAt": "2025-03-11T18:36:39.6251883+09:00",
+    "Category": ""
+  },
+  {
+    "Id": 4,
+    "Description": "carry",
+    "Amount": 60,
+    "CreatedAt": "2025-03-11T18:37:04.9024931+09:00",
+    "Category": ""
+  },
+  {
+    "Id": 5,
+    "Description": "apple",
+    "Amount": 20,
+    "CreatedAt": "2025-02-14T23:43:34.8800415+09:00",
+    "Category": "\u0022food\u0022"
+  },
+  {
+    "Id": 6,
+    "Description": "ring",
+    "Amount": 20,
+    "CreatedAt": "2025-02-14T23:47:04.6130506+09:00",
+    "Category": "food"
+  },
+  {
+    "Id": 7,
+    "Description": "ring",
+    "Amount": 20,
+    "CreatedAt": "2025-02-15T21:50:19.9749783+09:00",
+    "Category": "food"
+  }
+]

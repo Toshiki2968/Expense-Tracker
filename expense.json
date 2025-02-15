@@ -2,25 +2,8 @@
   {
     "Id": 1,
     "Description": "banana",
-    "Amount": 30,
-    "CreatedAt": "2025-02-11T18:36:39.6251883+09:00"
-  },
-  {
-    "Id": 2,
-    "Description": "apple",
-    "Amount": 40,
-    "CreatedAt": "2025-02-11T18:37:04.9024931+09:00"
-  },
-  {
-    "Id": 3,
-    "Description": "ramen",
-    "Amount": 50,
-    "CreatedAt": "2025-03-11T18:36:39.6251883+09:00"
-  },
-  {
-    "Id": 4,
-    "Description": "carry",
-    "Amount": 60,
-    "CreatedAt": "2025-03-11T18:37:04.9024931+09:00"
+    "Amount": 20,
+    "CreatedAt": "2025-02-15T21:23:59.4307284+09:00",
+    "Category": "food"
   }
 ]
