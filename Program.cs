@@ -169,6 +169,10 @@ class Program
         return true;
     }
 
+    /// <summary>
+    /// 合計経費取得コマンド
+    /// </summary>
+    /// <param name="commands"></param>
     private static void HandleSummaryCommand(string[] commands)
     {
         if (commands.Count() == 2)
@@ -188,6 +192,12 @@ class Program
         ConsoleMessage.PrintCommandMessage($"Total expenses for {monthName}: ${summary}");
     }
 
+    /// <summary>
+    /// 合計経費取得コマンドチェック
+    /// </summary>
+    /// <param name="requiredLength"></param>
+    /// <param name="commands"></param>
+    /// <returns></returns>
     private static bool IsHandleSummaryCommandCorrect(int requiredLength, string[] commands)
     {
         if (commands.Length != requiredLength)
@@ -209,6 +219,11 @@ class Program
         }
         return true;
     }
+
+    /// <summary>
+    /// 経費取得コマンド
+    /// </summary>
+    /// <param name="commands"></param>
     private static void HandleListCommand(string[] commands)
     {
         if (commands.Length != 2)
