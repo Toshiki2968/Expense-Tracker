@@ -21,7 +21,7 @@ dotnet run
 ## 機能詳細
 ### 経費の追加機能
 
-新しい経費を登録します。  
+新しい経費を登録します。
 
 #### コマンド形式  
 ```sh
@@ -62,6 +62,21 @@ expense-tracker summary
 #### 入力例
 ```sh
 expense-tracker summary
+```
+#### 出力例
+```sh
+# Total expenses: $30
+```
+
+### 経費の月別合計取得機能
+#### コマンド形式  
+```sh
+expense-tracker summary --month {月}
+```
+
+#### 入力例
+```sh
+expense-tracker summary --month 2
 ```
 #### 出力例
 ```sh
