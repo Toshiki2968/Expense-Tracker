@@ -37,7 +37,7 @@ expense-tracker add --description "Lunch" --amount 20 --category "Food"
 # Expense added successfully (ID: 1)
 ```
 
-# 経費のリスト取得機能
+### 経費のリスト取得機能
 #### コマンド形式
 ```sh
 expense-tracker list
@@ -53,7 +53,7 @@ expense-tracker list
 # 1   2024-08-06  Lunch        $20    Food
 ```
 
-# 経費の合計取得機能
+### 経費の合計取得機能
 #### コマンド形式  
 ```sh
 expense-tracker summary
@@ -68,7 +68,7 @@ expense-tracker summary
 # Total expenses: $30
 ```
 
-# 経費の削除機能
+### 経費の削除機能
 #### コマンド形式
 ```sh
 expense-tracker delete --id {id}
