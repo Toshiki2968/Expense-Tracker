@@ -125,6 +125,11 @@ class Program
             ConsoleMessage.PrintErrorMessage("金額の形式が不正です。");
             return false;
         }
+        if(Int32.Parse(commands[5]) < 0)
+        {
+            ConsoleMessage.PrintErrorMessage("0以上の金額を入力してください。");
+            return false;
+        }
         return true;
     }
 
