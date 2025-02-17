@@ -112,11 +112,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\toshiki.sumiya\\Desktop\\roadmap-project\\expenseTracker\\expenseTracker.csproj",
+      "projectUniqueName": "C:\\Users\\toshiki.sumiya\\Documents\\Expense-Tracker\\expenseTracker.csproj",
       "projectName": "expenseTracker",
-      "projectPath": "C:\\Users\\toshiki.sumiya\\Desktop\\roadmap-project\\expenseTracker\\expenseTracker.csproj",
+      "projectPath": "C:\\Users\\toshiki.sumiya\\Documents\\Expense-Tracker\\expenseTracker.csproj",
       "packagesPath": "C:\\Users\\toshiki.sumiya\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\toshiki.sumiya\\Desktop\\roadmap-project\\expenseTracker\\obj\\",
+      "outputPath": "C:\\Users\\toshiki.sumiya\\Documents\\Expense-Tracker\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\toshiki.sumiya\\AppData\\Roaming\\NuGet\\NuGet.Config"
